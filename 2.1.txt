@@ -1,0 +1,15 @@
+This paper, written by, Satoshi Nakamoto introduced blockchain technology to the world.
+
+In this paper he had discussed a solution to the trust-based model of finanical systems and 
+introduced an electronic payment system based on cryptographic proof instead of trust,
+allowing any two willing parties to transact directly with each other without the need for a trusted
+third party. These transactions are computationally impractical to reverse would protect sellers
+from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. 
+
+In this paper, he proposed a solution to the double-spending problem using a peer-to-peer distributed
+timestamp server to generate computational proof of the chronological order of transactions. The security 
+in the system is guaranteed as long as honest nodes collectively control more CPU power than any cooperating
+group of attacker nodes.
+
+This paper hightlights the fact that different trustless parties can collaborate with each other 
+without a central authority if all the parties are in a network agree on some consensus.   
