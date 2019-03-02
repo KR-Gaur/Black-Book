@@ -1,0 +1,18 @@
+This paper explores whether, by integrating language, by way of a semantic legal layer, into blockchain-based 
+smart contracts, smart contracts could become full legal contracts. 
+The current blockchain landscape, in and of itself, is insufficient to capture the nuance of contract language,
+to preserve the evidence of the contracting process for those cases where parol evidence might be admissible, 
+or to provide for the many non-financial terms that parties typically negotiate as part of a contract. However,
+the integration of a semantic legal layer – utilizing jurisdiction specific legal ontologies – could add 
+the precision, flexibility, and enforceability to blockchain-based smart contracts to allow them to serve 
+the same purposes at their traditional progenitors. 
+
+
+Integrating legal language into smart contracting processes, then, is no small feat. Particularly for contracts
+between major enterprises, smart contracts are highly unlikely to eliminate the need for legal counsel with 
+expertise in both the industry(ies) and jurisdiction(s) pertinent to the contract. A number of clauses, 
+such as choice of law, indemnification, disclaimer of warranty, limit of liability, assignability,
+termination, modification, and so forth, will still need to be negotiated between parties. For contracting parties 
+without counsel at their disposal, however, fully legal smart contracts could potentially “level the playing field,” 
+giving them at least some access, through an ontology, to the same language used so effectively by attorneys, 
+in addition to access to automated enforcement.
