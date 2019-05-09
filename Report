@@ -1,0 +1,532 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\usepackage{comment}
+
+\usepackage[english]{babel}
+\usepackage{biblatex}
+\usepackage{url}
+\usepackage{csquotes}
+%\addbibresource{references.bib}
+
+\makeindex[columns=3, title=Alphabetical Index]
+\usepackage[margin=1.5in]{geometry}
+
+\begin{document}
+
+\pagenumbering{roman}
+ \addcontentsline{toc}{section}{\numberline{}Certificate}
+ \begin{center}
+    \section*{Certificate Page}
+ \end{center}
+ 
+\clearpage
+
+ \addcontentsline{toc}{section}{\numberline{}Some Formality Page}
+ \begin{center}
+    \section*{Some Formality Page}
+    wow this is where I will do some ...
+ \end{center}
+\clearpage
+\begin{center}
+    \section*{Acknowledgement}
+\end{center}
+    \addcontentsline{toc}{section}{\numberline{}Acknowledgement}
+    I take this opportunity to express our sincere appreciation for the cooperation given by Prof. Sumedha Sirsikar, HOD (Department of Information Technology) and external guide Dr. Shrirang Karandikar and need a special mention for all the motivation and support.
+
+    I am deeply indebted to Prof. Sumedha Sirsikar and Dr. Shrirang Karandikar for completion of this
+    project for which they have guided and helped us going out of the way.
+    
+    For all efforts behind the Project report, I would also like to express our sincere appreciation to staff of department of Information Technology, Maharashtra Institute of Technology Pune, for their extended
+    help and suggestions at every stage.  
+    \newline
+    \newline
+\begin{flushright}
+    Sumit J. Hotchandani - Roll No: B150028531 \\
+    Kailash Raj Gaur - Roll No: B150028538  \\
+    Shikhar Bhatt - Roll No: B150028563 \\
+    BE. (Information Technology)
+    MIT, Pune 411038
+\end{flushright}
+
+\clearpage
+
+\tableofcontents.
+\thispagestyle{empty}
+
+\clearpage
+\listoffigures
+
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Template for Practice}
+    In this example several keywords\index{keywords} will be 
+    used which are important and deserve to appear in the 
+    Index\index{Index}.
+     
+    Terms like generate\index{generate} and some\index{others} 
+    will also show up. Terms in the index can also be 
+    nested \index{Index!nested}
+     
+\clearpage
+ 
+
+% \printindex
+
+\section{Introduction}
+   \subsection{Background}
+   This project intends to replace the current archaic process of storing health records and the entire insurance policy life cycle i.e. from buying insurance to policy servicing to claim settlement.
+
+    The current insurance system has a lot of problems or challenges like there is a lack of trust between the buyer and the seller(insurance company), the user has to manage all his paper based records(for example health records, policy records,etc), a lot of middlemen are involved in the entire process starting from buying a policy to claim settlement.
+    
+    This project addresses the above mentioned problems by helping the users to manage their health records and maintain their medical history. Being a completely digital platform middlemen are eliminated introducing much more transparency in the system. Claim settlements will be quick and easy saving user’s time and efforts.
+    \subsection{Aim}
+     \begin{itemize}
+        \item Study the blockchain technology and applying it in solving the problem.
+        \item Learn Solidity contract oriented programming language to write smart contracts.
+        \item Learn to create nodes and deploy the blockchain network on Microsoft Azure Platform.
+        \item 	Understand and learn the React.js library for building user interfaces.
+     \end{itemize}
+     
+    \subsection{Goals}
+     \begin{itemize}
+         \item To create an efficient and streamlined healthcare system.
+         \item Secured storage and sharing of medical records.
+         \item	Ensure structural interoperability between healthcare centers.
+        \item Easier to track medical history.
+        \item Reduce middlemen involved in the insurance policy life cycle.
+        \item Reduce manpower and interactions required in claim verification.
+        \item Facilitate automated and quick claim settlement by using Smart Contracts
+     \end{itemize}
+    \subsection{Software Development Model}
+    The project has four major use-cases: Identity Management, Uploading Health Records,Policy Servicing and Claim Settlement. The software is built one use-case after another.The first version is not the final version, it is like a test version which will give user the feel of the system.The use-cases are refined and more functionality is added in each iteration of refinement. The software development model used here is Incremental Model. The requirements of the software are all set in the beginning and in every iteration a new functionality is added or modified.
+    
+    \subsection{Report Overview}
+    This report consists of the following details related to the project-
+     \begin{itemize}
+         \item Background and Literature Review: This section describes the current scenario or system related to this project, the survey of existing solutions similar to this project, a description of the project work carried out to learn about the methodology used for the investigation of the problem, key sources of information(like research papers,etc.) and the tools and technologies being used to implement this project.
+         \item 	Requirement and Analysis: This section focuses on the intricate details of the project which includes the problem statement, the requirements specifications, system features, involved parties in the system, use-cases in the project, software and hardware related details of this project.
+         \item  Design: This section covers the design details of the project. It includes the system architecture, UML diagrams - use-case diagram, class diagram, activity diagram, sequence diagram which will explain the model of the project.
+         \item Implementation: This section is about the realization of the concepts and ideas development. It covers the implementation details like the modeling of the system, the tools and technologies used, different modules in the project, problems faced while implementing these modules and the algorithms being used for programming the problem
+     \end{itemize}
+	
+\clearpage
+
+\section{Background}
+ \subsection{Background Information}
+    The insurance system on blockchain is one of the important and hot topics in the technology industry. The frauds being taking place in this sector has created a lot of problems for many companies around the work. Companies like EY, Cognizant, Bajaj Allianz have started to work on this technology to secure and make services easily accessible to people from all walks of life.
+    
+    A lot of papers have been published related to this project. One of the papers is - ‘Blockchain and Smart Contracts for Insurance - Is the technology Mature Enough’. This paper is about the usage of the technology for the insurance system.
+
+    MedicalChain is a startup which has implemented one of the modules of the project - the electronic health record storage.
+  
+  \subsection{Literature Review}
+    The major papers referred are-
+    \begin{enumerate}
+        \item \textbf{ Satoshi Nakamoto (2008) “Bitcoin: A Peer-to-Peer Electronic Cash System”}
+        It is the first successful implementation of Blockchain. The paper covers the how the technology works, the terminologies used, how bitcoin works, concept of mining, what is a consensus protocol,etc.
+        
+        \item \textbf{ Darra L. Hoffman. "Legally Speaking: Smart Contracts,    Archival Bonds, and Linked Data in the Blockchain"}
+        This papers talks about the contract oriented programming language ‘Smart Contract'. It covers what is the language about and how to write it smart contracts.
+        \item \textbf{Stefano De Angelis, Leonardo Aniello, Roberto Badoni, Federico Lombardi, Andrea Margheri, and Vladimiro Sassone. "PBFT vs Proof-of-Authority: Applying the CAP Theorem to Permissioned Blockchain"}
+
+        This paper introduces the concept of Proof of Authority consensus and how it is more efficient than the pBFT mechanism. It includes the Aura protocol, chain scoring and chain finality concepts. It also includes the comparison between Aura and pBFT.
+        
+        \item \textbf{Juan Benet (2014). "IPFS – Content Addressed, Versioned, P2P File System"}
+
+        The paper introduces the concept of Inter-Planetary File system. It tells how the data is stored on IPFS servers and the data can be retrieved from those servers. It is the white paper of the IPFS technology.
+        
+        \item \textbf{Valentina Gatteschi, Fabrizio Lamberti, Claudio Demartini, Chiara Pranteda and Víctor Santamaría. "Blockchain and Smart Contracts for Insurance: Is the Technology Mature Enough?"}
+
+        The paper talks about the application of blockchain in the insurance sector. It focuses on the maturity of blockchain technology and how it can applied in this sector. It also touches the concept of smart contracts enlightening its importance and necessity in the insurance system. It includes the basic use-cases in the system.
+    \end{enumerate}
+
+\clearpage
+
+\subsection{Tools and Technologies Used}
+\begin{enumerate}
+    \item \textbf{Parity Ethereum}
+
+        It is an open-source software for building the decentralized Web. Parity Develops cutting-edge blockchain technologies to foster innovations. Parity Ethereum provides the core infrastructure essential for the speedy and reliable services. It uses Proof of
+        Authority consensus protocol. It provides clean, modular code base for easy customization along with minimal memory and storage footprint. The entire information about Parity is available on wiki.parity.io. 
+
+        Choices - Geth
+        Why Parity? Parity uses Proof of Authority consensus mechanism which suits this project as Geth uses Proof of Work mechanism which high intensive mathematical calculations and uses a lot of electricity as all the nodes try to verify the transactions at the same time whereas in Proof of Authority allows only one node to verify a particular transaction and other just validate it.
+         
+    \item \textbf{Solidity}
+
+        Solidity is a contract-oriented, high-level language for implementing smart contracts. It was influenced by C++, Python and JavaScript and is designed to target the Ethereum Virtual Machine (EVM). Ethereum only uses solidity to write smart contracts so there is no other choice of programming smart contracts other than solidity.
+
+    \item \textbf{Web3.js}
+
+        Web3.js is a collection of libraries which allow you to interact with a local or remote ethereum node, using a HTTP or IPC connection. It helps the frontend interact with the blockchain.
+
+    \item  \textbf{React JS}
+
+        ReactJS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+
+        Choices - AngularJS
+        
+        Why ReactJS? ReactJS is one of the most widely used libraries to build frontend in blockchain based applications. It’s community support is very strong in relations to blockchain. Solutions for most of the problems related to it available on the www.ethereum.stackexchange.com.
+
+\end{enumerate}
+\clearpage
+
+\section{Specification}    
+    \subsection{Problem Statement}
+
+        To create a Blockchain based platform which maintains medical history of users, allows them to purchase insurance policies, generating smart contracts to implement the terms of the policy contract and automates claim settlement.
+        
+        The project aims to create streamlined and efficient healthcare system by leveraging the blockchain technology. In this system, the government creates a network of healthcare and insurance providers that meet certain standards set by the government. A user who wishes to buy health insurance goes to any one of the healthcare providers in the aforementioned network and get a health check-up. Their medical records are added on the blockchain network. The user can buy an insurance policy using this platform. Once insured the policy details are be uploaded on the blockchain network and policy renewal and lapses are handled through smart contracts. In case of a claimable event, the healthcare provider uploads the medical records tagged as claimable, if the user has an insurance policy then all conditions are tested against the uploaded medical records and if all conditions are matched the claims are automatically settled by the smart contracts.
+        \newline
+        This project has four major modules- identity management, electronic health record(EHR) storage, policy servicing and the claim settlement.
+        
+        The identity management module is responsible for user on-boarding process of the system. User needs to provide the necessary details and if all details fulfill the requirements the user is provided a unique pair of public and private keys. This key pair will be further used in the other features of the system.
+        \newline
+        The EHR module is responsible for storing medical records of the user in the blockchain.Here, the healthcare providers generate medical reports and bills of the patient(user) and upload it on the IPFS servers. The IPFS returns a unique hash of the record uploaded and this particular hash is encrypted with the user’s public key in-order to maintain user privacy.
+        
+        The policy servicing module allows the insurance providers to give policy quotations to the users, the users buy policy and pay premiums. This feature handles all the intricacies of the insurance system. It allows the valid users to view policy details put up by the insurance provider, select policies, grant record access permissions to the insurance providers, choose the policy after comparing the quotations sent by the insurance providers and pay premiums for the policies as per the conditions.
+
+        The claim settlement module allows the claims to be settled against the hospital bills and medical reports tagged as claimable. The entire process is automated. The smart contracts analyze the bills and medical records uploaded by the healthcare providers. If all the conditions in the user’s policy contract match with those of the medical records then the smart contract will settle the claim and necessary amount is transferred into the user’s account.
+    \clearpage
+    \subsection{Requirements Specification}
+      \subsubsection{Scope of Project}
+        This project intends to replace the current archaic process of storing health records and the entire insurance policy life cycle i.e. from buying insurance to policy servicing to claim settlement.
+
+        The system is based on blockchain technology which helps with decentralized storage of medical records and policy details of every patient. The blockchain technology is basically the combination of three technologies, viz., private key cryptography, P2P network, and program or protocol. The blockchain technology represents an innovation in the field of information registration and distribution that eliminates the need for an intermediate trusted authority to facilitate digital relationships.
+        
+        Blockchain-based systems could help radically improve the insurance industry. But its impact could be much broader. Insurance claims processing and settlement are areas where a customer buys a policy and the policy sets out rules under which one gets coverage. The level of expertise required for claim adjusters or the investigators, who investigate, negotiate and settle claims, varies directly with the nature of loss, under the jurisdiction whose law applies to the contract creation, interpretation and enforcement, one of principal consumer protection issues within the insurance pricing, underwriting, and claim settlement process.
+         
+        Blockchain may be useful in reducing fraud related to the integrity of a policy or claim. By maintaining the integrity of the asset through various owners, Blockchain will minimize counterfeiting, double booking, document or contract alterations. However, use of the Blockchain does not mitigate the risk associated with the majority of first party and third-party frauds. Fraud detection and investigation systems will still be required.
+     \subsubsection{User Classes}
+        \begin{itemize}
+            \item \textbf{User} \newline Citizens of India are going to use the application to access their medical records, give permission to the the requesting parties for their medical records, buying insurance policy, paying premiums and track the status of their claims. The User should have the basic knowledge of using a computer and need to have access to the internet to avail the above mentioned services.
+            
+            \item \textbf{Healthcare providers} \newline Healthcare providers have the ability to upload User’s medical records on the blockchain network and view user’s records after permission granted. The personnel using the application needs to have basic knowledge of computers and internet. The Healthcare provider also acts as a node in the blockchain network and thus verify and validate transactions. A network professional is a requirement for the healthcare providers who keeps a checks on the functioning of the node.
+            
+            \item \textbf{Insurance Provider} \newline An Insurance Providers provides policy quotations to the User’s, view user’s records after permission granted, grant insurance policies to the user and most importantly settle claims. Basic knowledge of computer and internet is enough. An Insurance Company will also act as a node, verify and validate transactions on the network. A network professional is a requirement for the insurance company who keeps a checks on the functioning of the node.
+
+         \end{itemize}
+\clearpage
+    \subsubsection{Operating Environment}
+
+    The software will operate with the following software components and applications:\newline
+    The software being developed will be running on virtual machines with Linux OS(Ubuntu 16.04). The applications can be accessed with any web browser(Google Chrome, Mozilla Firefox, etc.) on any operating system(Windows, Linux, Mac OS). The users need to have an internet connection to access the applications.
+
+    \subsubsection{Constraints}
+    \begin{itemize}
+        \item The system is designed using the Parity client of Ethereum which is developed using Rustlanguage.
+        \item The user interface will be developed using HTML and CSS.
+        \item The UI would communicate with the client using the web3.js API provided by Ethereum.
+        \item All of the computation and transactions will be done through smart contracts developed using Solidity
+        \item All of the above would be deployed on Proof-of-Authority chain.
+    \end{itemize}
+
+
+    \subsubsection{Assumptions and Dependencies}
+    \textbf{The assumptions are}:
+    \begin{itemize}
+        \item The coding should be error free.
+        \item Each person must have an Aadhar Card.
+        \item All terms and conditions of a policy agreed between the insurance provider and a client must be understood and encoded as a smart contract.
+        \item Constant and stable Internet connection while records are uploaded and claims are settled.
+        \item Users must have basic knowledge of interacting with a computer.
+    \end{itemize}
+    \textbf{The dependencies are }:
+    \begin{itemize}
+        \item 	The specific hardware and software due to which the product will be run.
+        \item   Based on listed requirements and specification the project will be developed and run.
+        \item    The end users should have proper understanding of the product.
+    \end{itemize}
+    
+\subsubsection{External Interface Requirements}
+\begin{itemize}
+    \item  \textbf{User Interface}:
+    The interfaces for each specific user have been designed so that it is convenient to use. It is a simple and easy to use interface giving more power to the user .The application makes sure at every point, that the User spends most of the time using the application rather than figuring out how to use it.
+    
+    The home screen offers a menu with a list of functions that the application performs. The user can select one of the options on the menu, and is taken to the respective page.
+    
+    \item \textbf{Hardware Interface}: \newline
+    The minimum hardware requirements of a computer running our platform should be:
+    \begin{enumerate}
+        \item Processor: 1GHz or faster 32-bit or 64-bit processor
+        \item Hard Disk: 60GB
+        \item RAM: 1GB or higher
+        \item OS: Ubuntu 14.04 or higher
+    \end{enumerate}
+
+    The authority nodes are the nodes that maintain the blockchain network and are responsible for verifying and uploading transactions on the network. Therefore, these machines should have, if possible, more computing power than the minimum requirements and a fast and stable internet connection. As the scale of the network increases, the authority nodes will require more computational power.
+    \item \textbf{Software Interface}:
+
+    The decentralized applications(DApp) will be hosted on a Virtual Machine that runs Linux Ubuntu 16.04 LTS. The necessary softwares are installed on the nodes running these DApps. Further, these DApps can be accessed using a web browser(eg. Google Chrome, Mozilla Firefox, etc.) on any operating system, be it Windows, Mac or Linux. Any updates for the DApps can be pulled from the respective Github repositories.
+    \item \textbf{ Communication Interface:}
+
+    The system requires an internet connection to install new plugins, update already installed ones and the update some of its components (APIs, modules, etc.).
+    
+    The file upload and retrieval work on a new protocol i.e. the IPFS protocol which is a protocol built specifically for decentralized file storage and addressing. The IPFS protocol intends to replace HTTP and HTTPS.
+   
+   
+\end{itemize}
+    \subsubsection { System Features}
+
+    This section demonstrates the systems most prominent features and explain how they can be used and the results they will give back to the user
+    \begin{enumerate}
+        \item \textbf{Identity Management} \\
+        This feature allows user to be a part of the system. User needs to provide the necessary details and if all details fulfill the requirements the user is provided a unique pair of public and private keys. This key pair will be further used in the other features of the system.
+        \item \textbf{Records Upload} \\
+        This feature is only available for the healthcare providers. The healthcare providers will generate medical reports and bills of the patient(user) and then upload it on the IPFS servers. The IPFS returns a unique hash of the record uploaded and this particular hash is encrypted with the user’s public key in-order to maintain user privacy.
+        \item \textbf{Policy Servicing} \\
+        This is most crucial feature of the system. This feature handles all the intricacies of the insurance system. It allows the valid users to view policy details put up by the insurance provider, select policies, grant record access permissions to the insurance providers, choose the policy after comparing the quotations sent by the insurance providers and pay premiums for the policies as per the conditions. The insurance providers on the other hand just analyze user’s medical records and send policy quotations to the user. The rest other functionalities are handled by the smart contract in the blockchain network.
+
+        \item \textbf{Claim Settlement} \\
+        This feature allows the claims to be settled against the hospital bills and medical reports tagged as claimable. The entire process is automated. The smart contracts analyze the bills and medical records uploaded by the healthcare providers. If all the conditions in the user’s policy contract match with those of the medical records then the smart contract will settle the claim and necessary amount is transferred into the user’s account. Here, the insurance providers are not required to do any work and thus saving valuable time of the involved parties.
+
+    \end{enumerate}
+ \subsubsection{Use Cases}
+   \begin{enumerate}
+       \item \textbf{Manage Identity } \\
+             \textbf{ Identifier: DIP1} \\
+             \textbf{ Description:} 
+        Users provide Aadhaar Card to authenticate themselves and once validated the blockchain will generate their public-private keys.
+            \textbf{Goal:}
+            \begin{enumerate}
+                \item  Verify the user.
+                \item  Generate public-private keys.
+                \item  Allows users to use the platform.
+            \end{enumerate}
+           \textbf{Preconditions} None
+             \textbf{Assumptions}
+             \begin{enumerate}
+                 \item Aadhaar database is reliable.
+             \end{enumerate}
+          \textbf{Frequency :} One time verification and key generation for every user.
+            
+            
+            \textbf{Basic Course}
+            \begin{enumerate}
+            \item	User authenticates themselves by providing their Aadhaar Card.
+            \item	Blockchain verifies the Aadhaar against the Aadhaar Database.
+            \item	Once validated successfully, unique public-private key pair is generated.
+            \end{enumerate}
+            \textbf{Actors}
+            \begin{enumerate}
+            \item  User
+            \item Blockchain
+            \end{enumerate}
+            
+         \item \textbf{Upload Medical Records } \\
+             \textbf{ Identifier: DIP2} \\
+             \textbf{ Description:} User goes to the hospital for medical examination and the records generated are uploaded by the hospital after encrypting those records using the user’s public key thus maintain record privacy.
+        
+            \textbf{Goal:}
+            \begin{enumerate}
+                \item  Securely upload medical records on the network.
+                \item  Users are the sole owners of their medical records.
+            \end{enumerate}
+           \textbf{Preconditions} Healthcare provider should have user’s Aadhaar Number.
+
+             \textbf{Assumptions}
+             \begin{enumerate}
+                 \item Aadhaar database is reliable.
+             \end{enumerate}
+          \textbf{Frequency :} Multiple times for each user.
+            \textbf{Basic Course}
+            \begin{enumerate}
+            \item	User authenticates themselves by providing their Aadhaar Card.
+            \item	Medical checkup is completed and medical records are generated.
+            \item	User provides aadhaar number and hospital encrypts record using that public key.
+            \item 	Hospital uploads signed records on blockchain network.
+
+            \end{enumerate}
+            \textbf{Actors}
+            \begin{enumerate}
+            \item  User
+            \item Healthcare provider
+            \item Blockchain
+            \end{enumerate}
+   
+         \item \textbf{Share and View Medical Records} \\
+             \textbf{ Identifier: DIP3} \\
+             \textbf{ Description:} Once medical records generated, user is the sole owner of the medical records and can share the records with either insurance or healthcare providers as and when required. For this the user changes the access list of the medical records.
+
+            \textbf{Goal:}
+            \begin{enumerate}
+                \item  Securely share medical records with insurance or healthcare providers.
+            \end{enumerate}
+           \textbf{Preconditions} Users have their public key.
+             \textbf{Assumptions}
+             \begin{enumerate}
+                 \item Aadhaar database is reliable.
+             \end{enumerate}
+          \textbf{Frequency :} Multiple times by each user.
+                               User has a medical record.
+            
+            \textbf{Basic Course}
+            \begin{enumerate}
+            \item	User changes access list of medical record by adding the public key of the entity with whom they wish to share their records.
+            \item	Blockchain verifies the Aadhaar against the Aadhaar Database.
+            \item	Once permission given the accessing party can view the records.
+            \end{enumerate}
+            \textbf{Actors}
+            \begin{enumerate}
+            \item User
+            \item Blockchain
+            \item Insurance Provider
+            \item Healthcare Provider
+            \end{enumerate} 
+            
+          \item \textbf{Service Policy} \\
+             \textbf{Identifier: DIP4} \\
+             \textbf{Description:} User wants to buy an insurance policy and thus sends an application for the same to the insurance provider. The insurance provider verifies the medical records of the user and if valid the insurance policy is awarded to the user.
+                
+            \textbf{Goal:} 	Award insurance policy to the user.
+            \begin{enumerate}
+                \item  
+            \end{enumerate}
+           \textbf{Preconditions} Users have their public key.
+           \newline
+             \textbf{Assumptions}
+             \begin{enumerate}
+                 \item 
+             \end{enumerate}
+          \textbf{Frequency :} Multiple times for each user.\newline
+            \textbf{Basic Course}
+            \begin{enumerate}
+            \item	Users apply for insurance policy and share their medical records with the insurance provider.
+            \item	Insurance providers receive the application and send quotes.
+            \item  	Insurance providers verify user’s health records and if valid they award the insurance policy.
+            \item 	User’s pay premiums for the policy.
+            \end{enumerate}
+            \textbf{Actors}
+            \begin{enumerate}
+            \item User
+            \item Blockchain
+            \item Insurance Provider
+            \end{enumerate} 
+            \textbf{Include}
+            \begin{enumerate}
+            \item Share and View Medical Records(DIP3)
+            \end{enumerate} 
+        
+         \item \textbf{Settle Claim} \\
+             \textbf{Identifier: DIP5} \\
+             \textbf{Description:} In case of a claimable event, the healthcare provider uploads the necessary medical records of the user on the blockchain. The smart contracts analyze the medical records and if all conditions met the claim is settled.
+
+                
+            \textbf{Goal:} 		
+
+            \begin{enumerate}
+                \item  Get medical treatment.
+                \item  Upload new medical records.
+            \end{enumerate}
+           \textbf{Preconditions} Users have their public key.
+           \newline
+             \textbf{Assumptions}
+             \begin{enumerate}
+                 \item 
+             \end{enumerate}
+          \textbf{Frequency :}  Multiple times for each user per insurance policy.\newline
+            \textbf{Basic Course}
+            \begin{enumerate}
+            \item	Occurrence of a claim event (like medical treatment or death).
+            \item	Hospital uploads medical records (DIP3) in case of medical treatment (DIP2) or death certificate (DIP3) in case of death of the user.
+            \item  	Insurance providers verify user’s health records and if valid they award the insurance policy.
+            \item 	User’s pay premiums for the policy.
+            \end{enumerate}
+            \textbf{Actors}
+            \begin{enumerate}
+            \item User
+            \item Blockchain
+            \item Healthcare Provider
+            \item Insurance Provider
+            \end{enumerate} 
+            \textbf{Include}
+            \begin{enumerate}
+            \item Upload Medical Records (DIP2)
+            \item Share and View Medical Records(DIP3)
+            \end{enumerate}     
+
+   \end{enumerate}
+\clearpage
+\section{Design}
+    \subsection{System Architecture}
+        \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\linewidth]{Images/system_architecture.jpg}
+        \caption{System Architecture}
+        \label{fig:System Architecture}
+        \end{figure}
+        The system architecture has 5 main blocks-
+\begin{enumerate}
+    \item 	User Application Block: This block shows the interface for the user and what functionalities are available to the users. The users perform four functions - store the public and private keys that they receive on joining the system, view and grant access permissions to the medical records, view and buy the insurance policies and then pay premiums for the policies bought.
+    \item Healthcare Provider Block: The healthcare provider has two functions to perform- create medical records and upload those records on the file server available.
+    \item Inter-Planetary File System(IPFS): This block tells about the functions performed by the IPFS. It has two functions - storing medical records at appropriate node and generating an appropriate IPFS hash for the uploaded medical record. This hash will help to access the file stored on these servers.
+    \item Insurance Provider Block: This block tells the functionalities of the insurance company. It has three functions available to perform- give policy quotations to the user, access user’s medical records after permission granted by the user and settle claims using smart contracts.
+    \item Blockchain Block: This block shows the underlying technology being used to implement the system. The blockchain is collections of transactions stored in blocks in a specific manner. The transactions stores the necessary data - like medical record data, smart contracts,etc. The data stored in the transaction is stored in hex value.
+\end{enumerate}
+    \subsection{Use Case Diagram}
+    \begin{figure}[h!]
+    \centering
+     \includegraphics[width=\linewidth]{Images/Usecase.jpg}
+    \caption{Use Case Diagram}
+    \label{fig:Use Case}
+    \end{figure}
+\clearpage
+\section{Template for figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{Images/Encryption.png}
+\caption{The Universe}
+\label{fig:universe}
+\end{figure}
+
+\section{Conclusion}
+``I always thought something was fundamentally wrong with the universe''
+\clearpage
+\section{References}
+ 
+% \cite{BPG}
+% \cite{EWP}
+% \cite{FTD}f
+% \cite{IPFS}
+% \cite{LS}
+% \medskip
+% \printbibliography
+\begin{thebibliography}{References}
+\bibitem{}S. Nakamoto, \textbf{"Bitcoin: A peer-to-peer electronic cash system,"Consulted, vol.1, pp 3, 2008.}\\
+\urlstyle{same}\url{https://bitcoin.org/bitcoin.pdf}
+\bibitem{}Raghavendra Voichal Prabhakar , Govind Shukla , Upanshu Ratan, \textbf{“Blockchain:A Potential Game changer for Life Insurance” }-White Paper\\
+\urlstyle{same}\url{https://www.cognizant.com/whitepapers/blockchain-a-potential-game-changer-for-life-}\\\urlstyle{same}\url{insurance-codex2484.pdf}.
+\bibitem{}J Benet. \textbf{IPFS - Content Addressed, Versioned, P2P File System}.\\
+\urlstyle{same}\url{ https://arxiv.org/abs/1407.3561}.
+\bibitem{}Vitalik Buterin. \textbf{A Next Generation Smart Contract And Decentralized Application Platform.}\\
+\urlstyle{same}\url{http://blockchainlab.com/pdf/Ethereum_white_paper-a_next_generation_smart_contract_and_decentralized_application_platform-vitalik-buterin.pdf}.
+\bibitem{}A. Thomson, T. Diamond, S. Weng, K. Ren, P. Shao, and D. J. Abadi, \textbf{“Calvin: fast distributed transactions for partitioned database systems,” in Proceedings of ACM International Conference on Management of Data (SIGMOD), Scottsdale, AZ, USA, 2012, pp. 1–12. 1 }\\
+\urlstyle{same}\url{http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf}.
+\bibitem{}Valentina Gatteschi, Fabrizio Lamberti, Claudio Demartini, Chiara Pranteda and Víctor Santamaría. \textbf{"Blockchain and Smart Contracts for Insurance: Is the Technology Mature Enough?"} \\
+\urlstyle{same}\url{https://www.researchgate.net/publication/323298791_Blockchain_and_Smart_Contracts_for_Insurance_Is_the_Technology_Mature_Enough}
+\bibitem{}Darra L. Hofman. \textbf{Legally Speaking: Smart Contracts, Archival Bonds, and Linked Data in the Blockchain,Vancouver, BC, Canada}
+\urlstyle{same}\url{https://ieeexplore.ieee.org/document/8038515}
+\clearpage
+\end{thebibliography}
+\section{Bibliography}
+\begin{thebibliography}{Links}
+%\begin{itemize}
+    \item \urlstyle{same}\url{http://www.sharelatex.com}
+    \bibitem{} \urlstyle{same}\url{https://ipfs.io/}
+    \bibitem{} \urlstyle{same}\url{https://solidity.readthedocs.io/en/v0.4.24/}
+    \bibitem{} \urlstyle{same}\url{https://web3js.readthedocs.io/en/1.0/}
+    \bibitem{} \urlstyle{same}\url{https://wiki.parity.io/}
+    \bibitem{} \urlstyle{same}\url{https://reactjs.org/tutorial/tutorial.html}
+    \bibitem{} \urlstyle{same}\url{https://remix.ethereum.org/#optimize=false}
+    \bibitem{} \urlstyle{same}\url{https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ Dapp University Youtube Channel}
+    \bibitem{}  \urlstyle{same}\url{https://ethereum.stackexchange.com/}
+%\end{itemize}
+\end{thebibliography}
+\end{document}
