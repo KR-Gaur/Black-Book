@@ -1,0 +1,18 @@
+\chapter{Project Statement}
+
+\section{Problem Statement}
+
+\textit{To create a Blockchain based platform which maintains medical history of users, allows them to purchase insurance policies, generating smart contracts to implement the terms of the policy contract and automates claim settlement.}
+\section{Explanation}
+The project aims to create streamlined and efficient healthcare system by leveraging the blockchain technology. In this system, the government creates a network of healthcare and insurance providers that meet certain standards set by the government. A user who wishes to buy health insurance goes to any one of the healthcare providers in the aforementioned network and get a health check-up. Their medical records are added on the blockchain network. The user can buy an insurance policy using this platform. Once insured the policy details are be uploaded on the blockchain network and policy renewal and lapses are handled through smart contracts. In case of a claimable event, the healthcare provider uploads the medical records tagged as claimable, if the user has an insurance policy then all conditions are tested against the uploaded medical records and if all conditions are matched the claims are automatically settled by the smart contracts.
+\newline
+This project has four major modules- identity management, electronic health record(EHR) storage, policy servicing and the claim settlement.
+        
+The identity management module is responsible for user on-boarding process of the system. User needs to provide the necessary details and if all details fulfill the requirements the user is provided a unique pair of public and private keys. This key pair will be further used in the other features of the system.
+\newline
+The EHR module is responsible for storing medical records of the user in the blockchain.Here, the healthcare providers generate medical reports and bills of the patient(user) and upload it on the IPFS servers. The IPFS returns a unique hash of the record uploaded and this particular hash is encrypted with the user’s public key in-order to maintain user privacy.
+        
+The policy servicing module allows the insurance providers to give policy quotations to the users, the users buy policy and pay premiums. This feature handles all the intricacies of the insurance system. It allows the valid users to view policy details put up by the insurance provider, select policies, grant record access permissions to the insurance providers, choose the policy after comparing the quotations sent by the insurance providers and pay premiums for the policies as per the conditions.
+
+The claim settlement module allows the claims to be settled against the hospital bills and medical reports tagged as claimable. The entire process is automated. The smart contracts analyze the bills and medical records uploaded by the healthcare providers. If all the conditions in the user’s policy contract match with those of the medical records then the smart contract will settle the claim and necessary amount is transferred into the user’s account.
+
